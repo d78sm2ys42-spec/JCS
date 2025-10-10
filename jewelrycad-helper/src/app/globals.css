@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --font-sans: 'Inter', sans-serif;
+}
+
+body {
+  @apply bg-background text-foreground font-sans antialiased;
+}
+
+a {
+  @apply text-accent hover:underline;
+}
+
+button {
+  @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background;
+}
